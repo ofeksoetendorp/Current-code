@@ -1,0 +1,8 @@
+SpeechRecognition
+pyttsx3
+pyjokes
+keyboard
+playsound
+googlesearch-python
+datetime
+opencv-python
