@@ -26,18 +26,17 @@ while True:
             print(text)
             #if open is found start this
             if "open" in text.lower():
-                #if specificly open google is said he will open google, because with the other command it will just open an image of google
+                # if specificly open google is said he will open google, because with the other command it will just open an image of google
                 if "open google" == text.lower():
                     webbrowser.open("www.google.com")
-                    speak ("opening google")
-                #if not open google do this
+                    speak("opening google")
+                # if not open google do this
                 else:
-                    #get's the text for the website
-                    website = funcs.name()
-                    #opens the website
-                    funcs.open(website)
-                    #says he is opening that
-                    speak("opening"+ text.replace("open",""))
+                    # get's the text for the website
+                    # opens the website
+                    funcs.open(text)
+                    # says he is opening that
+                    speak("opening" + text.replace("open", ""))
             #a joke command will just play a funny audio file
             elif "send nudes" in text.lower():
                 playsound('audio.mp3')
