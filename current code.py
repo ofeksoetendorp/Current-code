@@ -2,7 +2,6 @@
 import webbrowser
 import pyjokes
 import keyboard
-from playsound import playsound
 import datetime
 #imports the games
 from games import Games
@@ -38,8 +37,8 @@ while True:
                     # says he is opening that
                     speak("opening" + text.replace("open", ""))
             #a joke command will just play a funny audio file
-            elif "send nudes" in text.lower():
-                playsound('audio.mp3')
+            #elif "send nudes" in text.lower():
+                #playsound('audio.mp3')
             elif "why am i single" in text.lower() or "am i ugly" in text.lower():
                 try:
                     speak ("to close press escape")
