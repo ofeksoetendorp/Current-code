@@ -33,9 +33,9 @@ while True:
                 #if not open google do this
                 else:
                     #get's the text for the website
-                    website = funcs.open()
+                    website = funcs.name()
                     #opens the website
-                    webbrowser.open(website)
+                    funcs.open(website)
                     #says he is opening that
                     speak("opening"+ text.replace("open",""))
             #a joke command will just play a funny audio file
