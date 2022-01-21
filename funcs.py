@@ -1,5 +1,3 @@
-import webbrowser
-import os
 import speech_recognition as sr
 import webbrowser
 import pyttsx3
@@ -7,6 +5,7 @@ import time
 import os
 import cv2
 import winsound
+
 engine = pyttsx3.init()
 def speak(audio):
     print(audio)
@@ -30,9 +29,9 @@ def open(site_name):
     if val != None:
         os.startfile(val)
     else:
-        for j in googlesearch.search(site_name, tld="co.in", num=1, stop=1):
+        text2 = site_name.split("open")
+        for j in googlesearch.search(text2, tld="co.in", num=1, stop=1):
             webbrowser.open(j)
-
 
 def open_app(word,dict):
     for k in dict.keys():
